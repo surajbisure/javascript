@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html><head>
+<h2>Max no of array is</h2>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+var arr=[10,20,30,40,90,50,60,70,77,80];
+document.getElementById("demo").innerHTML="max no is"+ max(arr);
+function max(arr)
+{
+    return Math.max.apply(null,arr);
+}
+</script>
+</body>
+</html>
