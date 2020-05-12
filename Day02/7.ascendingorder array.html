@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="button" value="Get Ascending Order" onclick="Asc()">
+
+<h1 id="Demo"></h1>
+
+<script type="text/javascript">
+
+		var arr= [10,20,70,65,55,92,205,05,24,45];
+		document.getElementById("Demo").innerHTML = arr;
+
+		function Asc() 
+		{
+            arr.sort(function(a, b){return a- b});
+            document.getElementById("Demo").innerHTML = arr;
+        }
+
+</script>
+</body>
+</html>
+
+
+
+
+
