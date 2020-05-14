@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="Demo"></p>
+
+<script>
+
+ class Account
+ {
+      constructor(name,balance)
+      {
+       this.Name=name;
+       this.Balance=balance;
+      }
+
+      Deposite(add)
+      {
+       this.Balance+=add;
+      }
+
+      Display()
+      {
+       
+       return this.Name +  this.Balance;
+      }
+ }
+
+ user1= new Account("suraj",20000);
+ document.write(user1.Display() +"</br>");
+ 
+ user1.Deposite(1000);
+ document.write(user1.Display()+ "</br>");
+
+ user2= new Account("sourabh",50000);
+    document.write(user2.Display() +"</br>");
+ user2.Deposite(2000);
+    document.write(user2.Display());
+
+
+</script>
+</body>
+</html>

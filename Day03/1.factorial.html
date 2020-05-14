@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<body>
+
+Enter Number:<input type="text" id="Demo1" >
+<input type="button" value="Factorial" onclick="Fact()">
+<h2 id="Demo2"></h2>
+
+<script>
+
+ Fact = () =>
+ {
+  var num= document.getElementById("Demo1").value;
+  var fact=1;
+
+  for(var i=1;i<=num;i++)
+  {
+   fact=fact*i;
+  }
+  document.getElementById("Demo2").innerHTML=fact;
+ }
+</script>
+</body>
+</html>
