@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <h2>class account and method deposit</h2></br>
+    <p id="f"></p>
+    <script>
+         class Account
+         {
+               constructor(name,balance)
+               {
+                  this.name=name;
+                  this.balance=balance;
+                  console.log(`${this.name} has RS ${this.balance} in account`);
+               }
+               deposit(depo)
+               {  
+                  console.log(`${this.name} Want to deposit RS ${depo} in account`);
+                  this.balance=this.balance+depo;
+                  console.log(`RS ${depo} is deposited in ${this.name} account`);
+               }
+         }
+         class Current extends Account
+         {
+                constructor(name,balance)
+                {
+                     super(name,balance);
+                }
+                withdraw(debit)
+                {
+                    this.debit=debit;
+                    console.log(`${this.name} want to withdraw RS ${this.debit} from account`);
+                    this.balance=this.balance-this.debit;
+                    console.log(`Rs ${this.debit} debited from ${this.name} account`);
+                }
+                show()
+                {
+                    return `${this.name} Having ${this.balance} balance left in a account`;
+                }
+         }
+               myAccount=new Current("suraj",1000);
+               myAccount.deposit(500);
+               myAccount.withdraw(500);
+               console.log(myAccount.show()); 
+
+               myAccount1=new Current("raj",2000);
+               myAccount1.deposit(300);
+               myAccount1.withdraw(200);
+               console.log(myAccount1.show());   
+    </script>
+</body>
+</html>
